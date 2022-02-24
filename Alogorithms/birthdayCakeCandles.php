@@ -1,5 +1,5 @@
 <?php 
-
+//max number count
 $candles = [1,3,4,4,2,4];
 $candles_count = count( $candles );
 function birthdayCakeCandles($candles) {
