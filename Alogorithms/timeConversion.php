@@ -1,5 +1,16 @@
 <?php
+/**
+ * Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
+ * Note: - 12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
+ *  12:00:00PM on a 12-hour clock is 12:00:00 on a 24-hour clock.
+ */
+
+//example string
 $str = '12:05:39AM';
+/**
+ * Complete the timeConversion function in the editor below. 
+ * It should return a new string representing the input time in 24 hour format.
+ */
 function timeConversion( $s ) {
    $s = preg_match( '/(.{2}):(.{2}):(.{2})(AM|PM)/', $s, $match );
    $hour = $match[1];
