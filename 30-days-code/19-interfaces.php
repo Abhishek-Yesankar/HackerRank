@@ -16,5 +16,5 @@ class Calculator implements AdvancedArithmetic {
     }
 }
 
-$cal = new Calculator;
+$cal = new Calculator; 
 echo $cal->divisorSum( 20 );
